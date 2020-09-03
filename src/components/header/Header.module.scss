@@ -1,0 +1,9 @@
+.header {
+  background-color: var(--berry);
+  padding: 23px 30px 22px;
+  
+  
+  @media (max-width: 767px) {
+    padding: 23px 20px 22px;
+  }
+}
