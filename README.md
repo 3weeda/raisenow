@@ -5,6 +5,7 @@
 Runs the app in the production mode along with the express mock API server.<br />
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
+
 ### `yarn start`
 
 Runs the app in the development mode, but without the express server.<br />
@@ -15,9 +16,11 @@ DISCLAIMER:
 1. Run `yarn build` after adding your changes to add them to production build.
 2. You'll need to run `yarn server` to run the express server with the latest build configurations.
 
+
 ### `yarn build`
 
 Builds the app for production to the `build` folder, which is used by the express server<br />
+
 
 ## `Project notes:`
 
@@ -33,7 +36,7 @@ Justification:
 
 ### `Task 2`
 
-I used a local express server to mock the API request and response needed. I believe it's the most naturally-felt way to do it. I prefer it over other methods like [Mirag JS](https://miragejs.com/).
+I used a local express server to mock the API request and response needed. I believe it's the most naturally-felt way to do it. I prefer it over other methods like [Mirage JS](https://miragejs.com/).
 
 
 
