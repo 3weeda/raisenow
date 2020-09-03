@@ -1,0 +1,123 @@
+.form {
+  width: 100%;
+  max-width: 540px;
+  border-radius: 4px;
+  box-shadow: 0 60px 100px 0 var(--box-shadow);
+  background-color: var(--white);
+  margin: 100px auto;
+
+  &__section {
+    padding: 30px 40px;
+
+    &:last-of-type {
+      text-align: right;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .choice {
+      display: flex;
+      position: relative;
+
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+
+      input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+      }
+
+      label {
+        display: flex;
+
+        .choice__left {
+          width: 18px;
+          margin: 5px 15px 0 0;
+          background-image: url("../../assets/radio-unchecked.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .choice__right {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            color: var(--text-primary);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 5px;
+          }
+
+          span {
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.46;
+          }
+        }
+      }
+
+      input:checked ~ label {
+        .choice__left {
+          background-image: url("../../assets/radio-checked.svg");
+        }
+      }
+    }
+
+    .nextBtn {
+      background-color: var(--lightBerry);
+      color: var(--white);
+      width: 95px;
+      border-radius: 4px;
+      font-size: 1rem;
+      line-height: 1.31;
+      padding: 9px 25px;
+      transition: 0.2s all ease-in;
+
+      &:hover {
+        background-color: var(--berry);
+      }
+
+      &:disabled {
+        background-color: var(--gray);
+        color: var(--text-secondary);
+      }
+    }
+  }
+  &__divider {
+    border-color: var(--moderateGray);
+    margin: 0;
+  }
+
+  @media (max-width: 1300px) {
+    margin: 21px auto;
+  }
+
+  @media (max-width: 767px) {
+    &__section {
+      padding: 30px;
+
+      .nextBtn {
+        width: 100%;
+      }
+    }
+  }
+}
