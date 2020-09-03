@@ -1,0 +1,17 @@
+@import "theme/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+.App {
+  background-color: var(--main-bg);
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+label {
+  margin-bottom: 0;
+}
+
+button {
+  border: none;
+  outline: none !important;
+}
